@@ -22,7 +22,7 @@ let package = Package(
         .binaryTarget(
             name: "IMIconnectCoreSDK",
             url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/1.0.3/wxconnect.zip",
-            checksum: "af00620c96cab31dd01eed7e1cc5e533cc3b996c6a83fa1bb0f331b5eb355298"
+            checksum: "996a1a8960ccb5b2b52a24c701bb4d4c34bdca1d118ad458cbc3212b858e72e2"
         )
         
     ]
