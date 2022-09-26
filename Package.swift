@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "IMIconnectCoreSDK",
-            targets: ["IMIconnectNotificationServiceExtension"])
+            targets: ["IMIconnectCoreSDK"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,9 +20,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
        
         .binaryTarget(
-            name: "IMIconnectNotificationServiceExtension",
-            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/1.1/wxconnect1.zip",
-            checksum: "e67f518c3cc0c03c05cd67ccdb7cb7db145bb97cb0d97378db183444877ac5a7"
+            name: "IMIconnectCoreSDK",
+            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/1.0.6/wxconnect.zip",
+            checksum: "17b53361c15b6ab61444459d70125ec2e1a3185f491e60e1a18b26ef1c2d39e1"
         )
     ]
 )
