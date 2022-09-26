@@ -10,6 +10,9 @@ let package = Package(
         .library(
             name: "IMIconnectCoreSDK",
             targets: ["IMIconnectCoreSDK"]),
+        .library(
+            name: "IMIconnectNotificationServiceExtension",
+            targets: ["IMIconnectNotificationServiceExtension"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,8 +24,13 @@ let package = Package(
      
         .binaryTarget(
             name: "IMIconnectCoreSDK",
-            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/1.0.4/wxconnect.zip",
-            checksum: "996a1a8960ccb5b2b52a24c701bb4d4c34bdca1d118ad458cbc3212b858e72e2"
+            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/1.0.6/wxconnect.zip",
+            checksum: "e7535d9a11cf19a15aeb43fa2260bc5a26aadf867ee942b41ff9f6343b624a57"
+        ),
+        .binaryTarget(
+            name: "IMIconnectNotificationServiceExtension",
+            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/1.0.6/wxconnect1.zip",
+            checksum: "2dd013093a9d7bf449bf8b0831420531376ed4d18cf280d9465843b48b0dda19"
         )
         
     ]
