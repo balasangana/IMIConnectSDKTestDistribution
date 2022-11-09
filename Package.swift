@@ -14,12 +14,12 @@ let package = Package(
         .binaryTarget(
             name: "IMIconnectCoreSDK",
             url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.17.0./wxConnectCoreSDK.zip",
-            checksum: "d53ee9c5821cb3da8db0bd97bfc3cc980179282a599b260999c7b54b4de7187c"
+            checksum: "44ad8f90e334bb969e7c1507b806b806e8ab7388c8c61755dfd28ab743a01611"
         ),
         .binaryTarget(
             name: "IMIconnectNotificationServiceExtension",
             url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.17.0./wxConnectNotificationServiceExtension.zip",
-            checksum: "59ba4a3b79ef259dc6e5905df05a84f703dbed98a8e1253359d93be9c2810310"
+            checksum: "31a6d00780331f4db33da6e2ea93fc8335c56a7c59a5c9da36e018ce40256e85"
         )
     ]
 )
