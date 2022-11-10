@@ -1,6 +1,6 @@
 import PackageDescription
 let package = Package(
-    name: "IMIconnectCoreSDK",
+    name: "WebexConnect",
     products: [
         .library(
             name: "IMIconnectCoreSDK",
@@ -14,12 +14,12 @@ let package = Package(
         .binaryTarget(
             name: "IMIconnectCoreSDK",
             url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.17.0/wxConnectCoreSDK.zip",
-            checksum: "c4712f3ad2092467fab796c109f1915b44abf46c7b79202d999e06479fa58121"
+            checksum: "60fb9f55d1644402923c2784f33deff7bd9ee141539c43182ae928c9f0e4a233"
         ),
         .binaryTarget(
             name: "IMIconnectNotificationServiceExtension",
             url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.17.0/wxConnectNotificationServiceExtension.zip",
-            checksum: "5dcf0c7eba0025640d6603b907a457451c5ad38952cc54ad88bc10e9636cb71f"
+            checksum: "26874fe61b989da96b30c3b3ad0432ef2bb5e153eb856669508c0db867e02dbd"
         )
     ]
 )
