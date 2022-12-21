@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:4.0
 import PackageDescription
 let package = Package(
     name: "WebexConnect",
@@ -14,13 +14,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "IMIconnectCoreSDK",
-            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.17.0.221/wxConnectCoreSDK.zip",
-            checksum: "0b1f23625c931a044d696688cf0e9811116d08949547343a44dac985c1a2b302"
+            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.17.0.224/wxConnectCoreSDK.zip",
+            checksum: "657c3c59990c31bdca123fb0955945e955420af66bb045d8d4c8e2b62aa77cfd"
         ),
         .binaryTarget(
             name: "IMIconnectNotificationServiceExtension",
-            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.17.0.221/wxConnectNotificationServiceExtension.zip",
-            checksum: "7869e9be83754dfc56a91889bd9e20130c82ddd8f58420e613b6062edf10d8b4"
+            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.17.0.224/wxConnectNotificationServiceExtension.zip",
+            checksum: "94fa80cb3ed7ae7460dd8bd359a1453a9b741025048b22a42cf0d0b373dd0ce2"
         )
     ]
 )
