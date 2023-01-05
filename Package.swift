@@ -4,23 +4,30 @@ let package = Package(
     name: "WebexConnect",
     products: [
         .library(
-            name: "IMIconnectCoreSDK",
-            targets: ["IMIconnectCoreSDK"])
-        ,
+            name: "TestConnectPod",
+            targets: ["IMIconnectCoreSDK"]),
+        .library(
+            name: "TestConnectPod-Lite",
+            targets: ["IMIconnectCoreSDK"]),
         .library(
             name: "IMIconnectNotificationServiceExtension",
             targets: ["IMIconnectNotificationServiceExtension"])
     ],
     targets: [
         .binaryTarget(
-            name: "IMIconnectCoreSDK",
-            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.17.0.224/wxConnectCoreSDK.zip",
-            checksum: "165cbd7854bf07aa2a436c2c62a5610807d7f79075c329bcd0fea9fa62e7964b"
+            name: "TestConnectPod",
+            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.17.0.225/wxConnectCoreSDK.zip",
+            checksum: "6ca623709c6997f7c37b5a683117264fc7afd7ebffedbf338ff75e7ad334b58e"
+        ),
+        .binaryTarget(
+            name: "TestConnectPod-Lite",
+            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.17.0.225/wxConnectCoreSDK.zip",
+            checksum: "6ca623709c6997f7c37b5a683117264fc7afd7ebffedbf338ff75e7ad334b58e"
         ),
         .binaryTarget(
             name: "IMIconnectNotificationServiceExtension",
-            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.17.0.224/wxConnectNotificationServiceExtension.zip",
-            checksum: "928299a750b37fc65fb0e32c2dba779739a36ef8199912e0f979267f3f15a3d8"
+            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.17.0.225/wxConnectNotificationServiceExtension.zip",
+            checksum: "5a34a3343265bfcd0e8902f958af98ce3b868fd095b21bd3945c33fe79fa8bd5"
         )
     ]
 )
