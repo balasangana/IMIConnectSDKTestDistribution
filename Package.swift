@@ -5,6 +5,9 @@ let package = Package(
     products: [
         .library(
             name: "TestConnectPod",
+            targets: ["IMIconnectCoreSDK"]),
+        .library(
+            name: "TestConnectPod-Lite",
             targets: ["IMIconnectCoreSDKLite"]),
         .library(
             name: "IMIconnectNotificationServiceExtension",
@@ -12,14 +15,19 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
+            name: "IMIconnectCoreSDK",
+            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.18.0.2/wxConnectCoreSDK.zip",
+            checksum: "c5445eba89c63ccf90683cdfe775c07a5e135e64d06961788c6ebde9bd30275c"
+        ),
+        .binaryTarget(
             name: "IMIconnectCoreSDKLite",
-            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.18.0.1/wxConnectCoreSDK.zip",
-            checksum: "d6c5e5df7e6cc407339b5dc14cfcc902522f7508ce4b7fab6e6d1b6f62408566"
+            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.18.0.2/wxConnectCoreSDKLite.zip",
+            checksum: "0a4846777ec34853bdd6a2bd8ccf5ccd1578fb13f54d5a056e117e2c6d9f280d"
         ),
         .binaryTarget(
             name: "IMIconnectNotificationServiceExtension",
-            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.18.0.1/wxConnectNotificationServiceExtension.zip",
-            checksum: "50e7d07ad342b33afb4688cfed4b182ad105a0ed39c0617822fc9eb7fee87ea1"
+            url: "https://github.com/balasangana/IMIConnectSDKTestDistribution/releases/download/2.18.0.2/wxConnectNotificationServiceExtension.zip",
+            checksum: "e9e37635c05448830776bc9ecf17f12ab6ed108e1145323990fe08e003a2e416"
         )
     ]
 )
